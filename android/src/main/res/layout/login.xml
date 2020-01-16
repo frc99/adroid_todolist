@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/back"
+        app:title="登录"
+        app:titleMarginStart="20dp"
+        app:titleTextColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        tools:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbremember"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/remember"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="70dp"
+            android:autoLink="all"
+            android:text="@string/forget" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:alpha="0.75"
+        android:radius="5dp"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btreg"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.5"
+        android:text="@string/register"
+        tools:textColor="@android:color/background_dark" />
+
+
+</LinearLayout>

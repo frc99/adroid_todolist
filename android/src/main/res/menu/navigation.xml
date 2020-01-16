@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/main_grey"
+        android:title="@string/main" />
+
+    <item
+        android:id="@+id/navigation_pen"
+        android:icon="@drawable/pen_grey"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/navigation_discovery"
+        android:icon="@drawable/surf_grey"
+        android:title="@string/discovery" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/me_grey"
+        android:title="@string/mine" />
+
+</menu>
